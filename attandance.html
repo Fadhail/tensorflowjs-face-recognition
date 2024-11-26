@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="face-api.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <title>Attendance System</title>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <div class="flex justify-center items-center min-h-screen p-6">
+
+        <!-- Main Content -->
+        <div class="flex flex-col gap-8 max-w-lg w-full">
+
+            <!-- Video Section -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <video id="video" width="100%" height="auto" autoplay muted class="w-full h-auto"></video>
+            </div>
+
+            <!-- Attendance Form Section -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-semibold text-center mb-4 text-gray-700">Attendance System</h2>
+
+                <button id="recognize"
+                    class="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300">
+                    Click for Attendance
+                </button>
+
+                <p class="text-sm mt-4 text-gray-500 text-center">
+                    *Please position your face in front of the webcam.
+                </p>
+
+                <!-- Button Group -->
+                <div class="flex justify-center gap-4 mt-6">
+                    <a href="index.html">
+                        <button
+                            class="py-2 px-4 bg-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-300 transition duration-200">
+                            Home
+                        </button>
+                    </a>
+                    <button id="register"
+                        class="py-2 px-4 bg-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-300 transition duration-200">
+                        Register Face
+                    </button>
+                    <button id="export"
+                        class="py-2 px-4 bg-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-300 transition duration-200">
+                        Export Attendance
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

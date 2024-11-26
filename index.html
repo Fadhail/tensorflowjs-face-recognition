@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="face-api.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <title>Register</title>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <div class="flex justify-center items-center min-h-screen p-6">
+
+        <div class="flex flex-col gap-8 max-w-lg w-full">
+
+            <!-- Video Section -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <video id="video" width="100%" height="auto" autoplay muted class="w-full h-auto"></video>
+            </div>
+
+            <!-- Registration Form Section -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-semibold text-center mb-4 text-gray-700">Register Your Face</h2>
+
+                <input type="text" id="name" placeholder="Enter name for registration"
+                    class="rounded-lg py-3 px-4 w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" /><br>
+
+                <button id="register"
+                    class="w-full py-3 px-6 bg-blue-600 text-white font-medium rounded-lg mt-6 hover:bg-blue-700 transition duration-200">
+                    Register Face
+                </button>
+
+                <!-- Button Group -->
+                <div class="flex justify-center gap-4 mt-6">
+                    <a href="index.html">
+                        <button
+                            class="py-3 px-6 bg-gray-200 text-gray-700 font-medium rounded-lg border border-gray-300 hover:bg-gray-300 transition duration-200">
+                            Home
+                        </button>
+                    </a>
+                    <a href="attandance.html">
+                        <button id="recognize"
+                            class="py-3 px-6 bg-gray-200 text-gray-700 font-medium rounded-lg border border-gray-300 hover:bg-gray-300 transition duration-200">
+                            Attendance
+                        </button>
+                    </a>
+                    <button id="export"
+                        class="py-3 px-6 bg-gray-200 text-gray-700 font-medium rounded-lg border border-gray-300 hover:bg-gray-300 transition duration-200">
+                        Export Attendance
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
